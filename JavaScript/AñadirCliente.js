@@ -146,7 +146,9 @@ function validar(){
         return false;
     }
 
-    alert("Registro exitoso");
+    else{
+        alert("Registro exitoso");
+    }
 
 };
 
