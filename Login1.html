@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+        <meta http-equic="X-UA-Compatible" content="ie=edge">
+        <title>Ingreso</title>
+        <link rel="shortcut icon" href="Imagenes/logoE (2).png" type="image/x-icon">
+        <link rel="stylesheet" href="Css/estiloLogin1.css">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    </head>
+    
+    <body>
+        <div class="contenedor">
+            <header>
+                <section id="logo" style="margin-top: 20px;">
+                    <a href="index.html"><img src="Imagenes/logoF (2).png" alt="logo" width="220"></a>
+                </section>
+            </header>
+            
+            <form  method="POST" name="formulario" id="formulario" target="_self">
+                <h1><em>"Un cliente satisfecho es la mejor estrategia de negocio"</em> </h1>
+                <h2><em> Michael LeBoeuf</em></h2>
+                <input type="text" maxlength="20" name="usuario" placeholder="Ingrese Usuario" id="usuario" style="height: 50px" autocomplete="off">  
+                <input type="password" maxlength="20" name="contraseña" placeholder="Ingrese Contraseña" id="contraseña" style="height: 50px;" autocomplete="off">
+                <button type="submit" onclick = "return validar()" class="button" name="boton" style="margin-top: -20px; margin-left: 0px;" id="boton"> Iniciar Sesión</button>
+                <a id="olvidar" href="Registrarse.html" >Registrese</a>
+            </form>
+            
+            <script type="text/javascript" src="JavaScript/login2.js"></script>
+            
+            <footer>
+                <h4 class="titulo-final">&copy; GAES 4 || Vanessa Garnica || Diego López || Angie Castañeda </h4> 
+            </footer>
+        </div>
+
+    </body>
+</html>
