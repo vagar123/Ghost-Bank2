@@ -84,7 +84,7 @@ function validar2(){
     estado = document.getElementById("estado2").value;
     grupo = document.getElementById("grupo2").value;
 
-    if(id == "" || nombre == "" || valor == "" || fecha == "" || estado == 0 || grupo == 0){
+    if(id == "" || nombre == "" || valor == "" || estado == 0 || grupo == 0){
         Swal.fire({
 			icon: 'error',
 			title:'Nuevo Ingreso Fallido',
