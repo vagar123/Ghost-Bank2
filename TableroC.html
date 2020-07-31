@@ -95,7 +95,7 @@
                 </div>
                 <div style="width: 100%; border-top: 1px solid #cccccc; padding: 12px;">
                     <input type="text" placeholder="Escriba un comentario" style="width: 91%;">
-                    <button style="padding: 2px; background: rgb(38, 86, 156); color: #fff; border: 1px solid #102a64;">Publicar</button>
+                    <button onclick="return validar2()" style="padding: 2px; background: rgb(38, 86, 156); color: #fff; border: 1px solid #102a64;">Publicar</button>
                 </div>
             </div> 
         </section>
@@ -117,7 +117,7 @@
                 </div>
                 <div style="width: 100%; border-top: 1px solid #cccccc; padding: 12px;">
                     <input type="text" placeholder="Escriba un comentario" style="width: 91%;">
-                    <button style="padding: 2px; background: rgb(38, 86, 156); color: #fff; border: 1px solid #102a64;">Publicar</button>
+                    <button onclick="return validar2()" style="padding: 2px; background: rgb(38, 86, 156); color: #fff; border: 1px solid #102a64;">Publicar</button>
                 </div>
             </div> 
         </section>
@@ -139,7 +139,7 @@
                 </div>
                 <div style="width: 100%; border-top: 1px solid #cccccc; padding: 12px;">
                     <input type="text" placeholder="Escriba un comentario" style="width: 91%;">
-                    <button style="padding: 2px; background: rgb(38, 86, 156); color: #fff; border: 1px solid #102a64;">Publicar</button>
+                    <button onclick="return validar2()" style="padding: 2px; background: rgb(38, 86, 156); color: #fff; border: 1px solid #102a64;">Publicar</button>
                 </div>
             </div> 
         </section>
@@ -161,7 +161,7 @@
                 </div>
                 <div style="width: 100%; border-top: 1px solid #cccccc; padding: 12px;">
                     <input type="text" placeholder="Escriba un comentario" style="width: 91%;">
-                    <button style="padding: 2px; background: rgb(38, 86, 156); color: #fff; border: 1px solid #102a64;">Publicar</button>
+                    <button onclick="return validar2()" style="padding: 2px; background: rgb(38, 86, 156); color: #fff; border: 1px solid #102a64;">Publicar</button>
                 </div>
             </div> 
         </section>
@@ -184,18 +184,27 @@
                 </div>
                 <div style="width: 100%; border-top: 1px solid #cccccc; padding: 12px;">
                     <input type="text" placeholder="Escriba un comentario" style="width: 91%;">
-                    <button style="padding: 2px; background: rgb(38, 86, 156); color: #fff; border: 1px solid #102a64;">Publicar</button>
+                    <button onclick="return validar2()" style="padding: 2px; background: rgb(38, 86, 156); color: #fff; border: 1px solid #102a64;">Publicar</button>
                 </div>
             </div> 
         </section>
-    
 
-        
+        <script>
+            function validar2(){
+                Swal.fire({
+                    position: 'top-end',
+                    icon: 'success',
+                    title: 'Comentario publicado con éxito',
+                    showConfirmButton: false,
+                    timer: 1500
+                })
+            };
+        </script>
+    
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script src="https://unpkg.com/@popperjs/core@2"></script>
         <script src="Bootstrap/bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
         <script src="JavaScript/jquery.js"></script>  
-        <script src="JavaScript/TableroA.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     
     </body>

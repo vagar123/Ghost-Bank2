@@ -1,0 +1,9 @@
+Link: https://vagar123.github.io/Ghost-Bank2/
+
+Administrador
+Usuario: administrador
+contraseña: 12345
+
+Cliente
+Usuario: cliente
+contraseña: 6789

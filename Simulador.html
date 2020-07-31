@@ -84,139 +84,34 @@
         </section>
 
 
-        <div id="cuerpo2">
-            <form id="formulario" name="formulario" method="POST" onsubmit="return validar()" action="#">      
+        <div id="cuerpo2">  
+            <div id="container">  
               <div class="row">
 
-                <h4 id="componente">Ingresos Mensuales</h4>
+                <h4 id="componente">Ingresos Mensuales Actuales</h4>
       
                 <div class="col-100">
-                    <input type="number" id="salario" placeholder="Salario" autocomplete="off">
+                    <h5 style="border: 1px solid #ccc; padding:5px; background: rgb(248, 248, 248);">$ 4.395.990</h5>
                 </div>
             
               </div>
       
-      
-              <div class="row">
-      
-                <div class="col-100">
-                    <input type="number" id="arriendo" placeholder="Arriendos" autocomplete="off">
-                </div>
-      
-              </div>
-
-              <div class="row">
-
-                <div class="col-100">
-                    <input type="number" id="emprendimientos" placeholder="Emprendimientos" autocomplete="off">
-                </div>
-      
-              </div>
-
-              <div class="row">
-
-                <div class="col-100">
-                    <input type="number" id="eventos" placeholder="Eventos" autocomplete="off">
-                </div>
-      
-              </div>
-
-
-              <div class="row">
-
-                <h4 id="componente" style="margin-top: 25px;">Egresos Mensuales</h4>
-      
-                <div class="col-100">
-                    <input type="number" id="servicios" placeholder="Servicios Públicos" autocomplete="off">
-                </div>
-            
-              </div>
-      
-      
-              <div class="row">
-      
-                <div class="col-100">
-                    <input type="number" id="auto" placeholder="Automovil" autocomplete="off">
-                </div>
-      
-              </div>
-
-              <div class="row">
-
-                <div class="col-100">
-                    <input type="number" id="manu" placeholder="Manutención" autocomplete="off">
-                </div>
-      
-              </div>
-
-              <div class="row">
-
-                <div class="col-100">
-                    <input type="number" id="emp" placeholder="Emprendimientos" autocomplete="off">
-                </div>
-      
-              </div>
-
-
-              <h4 id="componente" style="margin-top: 25px;">Fechas de ahorro</h4> 
-              <div class="row">
-      
-                <div class="col-50">
-                    <select name="" id="mes">
-                        <option value="0">Seleccione el mes</option>
-                        <option value="1">Todos</option>
-                        <option value="2">Enero</option>
-                        <option value="3">Febrero</option>
-                        <option value="4">Marzo</option>
-                        <option value="5">Abril</option>
-                        <option value="6">Mayo</option>
-                        <option value="7">Junio</option>
-                        <option value="8">Julio</option>
-                        <option value="9">Agosto</option>
-                        <option value="10">Septiembre</option>
-                        <option value="11">Octubre</option>
-                        <option value="12">Noviembre</option>
-                        <option value="13">Diciembre</option>
-                    </select>
-                </div>
-
-                <div class="col-50">
-                    <select id="semana">
-                        <option value="0">Seleccione la semana</option>
-                        <option value="1">1 semana</option>
-                        <option value="2">2 semana</option>
-                        <option value="3">3 semana</option>
-                        <option value="4">4 semana</option>
-                    </select>
-                </div>
-            
-            </div>
-
-            <div class="row">
-
-                <div class="col-50">
-                    <select id="dia">
-                        <option value="">Seleccione el día</option>
-                        <option value="">Lunes</option>
-                        <option value="">Martes</option>
-                        <option value="">Miércoles</option>
-                        <option value="">Jueves</option>
-                        <option value="">Viernes</option>
-                    </select>
-                </div>
-
-                <div class="col-50">
-                    <input type="date" id="fecha">
-                </div>
-
-            </div>
     
 
-                <input type="submit" value="Calcular" style="border: none; width: 100px;">
-                <input type="reset" value="Cancelar" style="border: none; width: 100px;">
+              <div class="row">
 
-              
-            </form>
+                <h4 id="componente" style="margin-top: 25px;">Egresos Mensuales Actuales</h4>
+      
+                <div class="col-100">
+                    <h5 style="border: 1px solid #ccc; padding:5px; background: rgb(248, 248, 248);">$ 913.880</h5>
+                </div>
+            
+              </div>
+
+              <input type="submit" onclick="return validar2()" value="Calcular" style="border: none; width: 100px;">
+
+            </div>
+
         </div>
 
         <section id="cuerpo2">
@@ -228,7 +123,7 @@
                           <th style="background:#6586d3; color: #fff;">N°</th>
                           <th style="background:#6586d3; color: #fff;">Total de Ingresos</th>
                           <th style="background:#6586d3; color: #fff;">Total de Ingresos Neto</th>
-                          <th style="background:#6586d3; color: #fff;">Total Gatos</th>
+                          <th style="background:#6586d3; color: #fff;">Total Gastos</th>
                           <th style="background:#6586d3; color: #fff;">Fecha de Ahorro</th>
                           <th style="background:#6586d3; color: #fff;">Capacidad de ahorro</th>
                       </tr>
@@ -305,7 +200,6 @@
         <script src="JavaScript/Simulador.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
         <script src="DataTables/datatables.min.js"></script>
-        <script type="text/javascript" src="JavaScript/Cliente.js" ></script>
     
     </body>
 </html>

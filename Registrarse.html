@@ -29,43 +29,80 @@
 
 	<h1 id="Regi"><p>Registro</a></p></h1>
 	<div class="container">
-		<form action="registro" method="POST" st>
+		<form id="formulario" name="formulario" onsubmit="return validar()" method="POST" >
 			<div class="row">
 				<div class="col-25">
-					<label for="fname">Nombres</label>
+					<label for="tipo">Tipo de documento</label>
 				</div>
 				<div class="col-75">
-					<input type="text" id="fname" name="nombre" placeholder="Digite nombres y apellidos.">
+					<select name="" id="tipo2">
+						<option value="0">Cédula de Ciudadania</option>
+						<option value="1">Cédula Extranjera</option>
+						<option value="2">Pasaporte</option>
+						<option value="3">Documento Nacional de Identificación</option>
+						<option value="4">PEP-RAMV</option>
+					</select>
 				</div>
 			</div>
 
 			<div class="row">
 				<div class="col-25">
-					<label for="country">Tipo de documento</label>
+					<label for="country">N° Identificación</label>
 				</div>
 				<div class="col-75">
-					<select id="fname" id="country" name="country">
-						<option value="Seleccione tipo de documento">Seleccione tipo de documento</option>
-						<option value="C.C">C.C</option>
-						<option value="C.E">C.E</option>
-						<option value="T.I">T.I</option>
+					<input type="text" id="id2" placeholder="Escriba el número de identificación" autocomplete="off" onkeypress="return solonumeros(event)">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-25">
+					<label for="lname" >Nombre</label>
+				</div>
+				<div class="col-75">
+					<input type="text"  id="nombre2" name="lastname" placeholder="Escriba sus nombres" autocomplete="off">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-25">
+					<label for="lname">Apellidos</label>
+				</div>
+				<div class="col-75">
+					<input type="text" id="apellido2" name="lastname" placeholder="Escriba sus apellidos" autocomplete="off">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-25">
+					<label for="lname">Correo</label>
+				</div>
+				<div class="col-75">
+					<input type="text" id="correo2" name="lastname" placeholder="Escriba su correo electrónico" autocomplete="off">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-25">
+					<label for="lname">Teléfono</label>
+				</div>
+				<div class="col-75">
+					<input type="text" id="tele2" name="lastname" placeholder="Escriba su teléfono o número de celular" autocomplete="off" onkeypress="return solonumeros(event)">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-25">
+					<label for="lname">Género</label>
+				</div>
+				<div class="col-75">
+					<select name="" id="genero2">
+						<option value="0">Seleccione su género</option>
+						<option value="1">Mujer</option>
+						<option value="2">Hombre</option>
 					</select>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-25">
-					<label for="lname" >Telefono</label>
+					<label for="lname">Fecha de nacimiento</label>
 				</div>
 				<div class="col-75">
-					<input type="text"  id="fname" name="lastname" placeholder="Digite numero telefonico..">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-25">
-					<label for="lname">Correo electronico</label>
-				</div>
-				<div class="col-75">
-					<input type="text" id="fname" name="lastname" placeholder="Digite correo electronico..">
+					<input type="DATE" id="fecha">
 				</div>
 			</div>
 			<div class="row">
@@ -73,31 +110,20 @@
 					<label for="lname">Contraseña</label>
 				</div>
 				<div class="col-75">
-					<input type="text" id="fname" name="lastname" placeholder="Digite contraseña..">
+					<input type="password" id="pass1" placeholder="Escriba la contraseña">
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-25">
-					<label for="lname">Verifique contraseña</label>
+					<label for="lname">Valide Contraseña</label>
 				</div>
 				<div class="col-75">
-					<input type="text" id="fname" name="lastname" placeholder="Digite contraseña nuevamente..">
+					<input type="password" id="pass2" placeholder="Escriba nuevamente la contraseña">
 				</div>
 			</div>
 
-
-			<div class="row">
-				<div class="col-25">
-					<label for="lname">Fecha de nacimiento</label>
-				</div>
-				<div class="col-75">
-					<input type="DATE" id="fname">
-				</div>
-			</div>
-			<div class="row" style="margin-top: 20px">
-				<button s type="submit" onclick = "return validar()" class="button" name="boton"  id="boton1" formaction="#"> Registrar</button>
-				<button type="submit" onclick = "return validar()" class="button" name="boton"  id="boton2" formaction="Login1.html"> Cancelar </button>
-			</div>
+			<input type="submit" value="Aceptar" style="border: none; width: 100px; margin-top: 20px;">
+			<input type="reset" value="Cancelar" style="border: none; width: 100px; margin-top: 20px; background-color: rgb(168, 168, 168); border-radius: 4px;">
 
 		</form>
 	</div>
@@ -113,5 +139,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+	<script src="JavaScript/Registrarse.js"></script>
 </body>
 </html>

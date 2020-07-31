@@ -107,11 +107,20 @@
       
                 
                 <div class="col-25">
-                  <label id="des1">Descripción:</label>
+                  <label id="tipo1">Tipo de reporte:</label>
                 </div>
       
                 <div class="col-25">
-                  <input type="text" id="des2" placeholder="Escriba la Descripción del reporte" autocomplete="off">
+                  <select name="" id="tipo2">
+                    <option value="0">Seleccione el tipo de reporte</option>
+                    <option value="1">Nuevos Clientes</option>
+                    <option value="2">Ingresos Totales</option>
+                    <option value="3">Egresos Totales</option>
+                    <option value="4">Metas Financieras</option>
+                    <option value="5">Clientes Constantes</option>
+                    <option value="6">Ahorros Máximos</option>
+                    <option value="7">Tip / Recomendaciones</option>
+                  </select>
                 </div>
       
               </div>
@@ -146,6 +155,16 @@
                   <input type="text" id="autor2" placeholder="Escriba su nombre completo" autocomplete="off">
                 </div>
       
+              </div>
+
+              <div class="row">
+                <div class="col-25">
+                  <label id="des1">Descripción:</label>
+                </div>
+      
+                <div class="col-25">
+                  <input type="text" id="des2" placeholder="Escriba la Descripción del reporte" autocomplete="off">
+                </div>
               </div>
 
                 <input type="submit" value="Aceptar" style="border: none; width: 100px;">

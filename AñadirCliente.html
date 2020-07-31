@@ -60,8 +60,8 @@
                   <li><a href="TableroA.html" style="border-left: 8px solid rgb(105, 228, 34);">Tablero</a></li>
                   <li><a href="#" style="border-left: 8px solid rgb(34, 228, 218);">Clientes<i class="icono derecha fa fa-chevron-down"></i></a>
                       <ul>
-                          <li><a href="ListaClientes.html">Lista de Clientes</a></li>
-                          <li><a href="#">Registrar Cliente</a></li>
+                          <li><a href="#">Lista de Clientes</a></li>
+                          <li><a href="AñadirCliente.html">Registrar Cliente</a></li>
                       </ul>
                   </li>
                   <li><a href="#"  style="border-left: 8px solid rgb(92, 34, 228);">Reportes<i class="icono derecha fa fa-chevron-down"></i></a>
@@ -73,12 +73,15 @@
                   </li>
                   <li><a href="#"  style="border-left: 8px solid rgb(228, 34, 44);">Ayuda y Soporte</a></li>
                   <li><a href="Login1.html"  style="border-left: 8px solid rgb(34, 228, 163);">Cerra Sesión</a></li>
-              </ul>
+               </ul>
             </div>
         </section>
 
         <section id="barra1">
-            <h3 id="inventarios">Clientes / Agregar Cliente</h3>
+          <h3 id="inventarios">
+            <a href="ListaClientes.html"><img src="Imagenes/atras.png" style="margin-right: 15px;" width="20"></a>
+            Clientes / Lista de Clientes / Agregar Cliente
+          </h3>
         </section>
 
         <section id="barra2">
@@ -96,7 +99,7 @@
         
 
         <div id="cuerpo1">
-            <form id="formulario" name="formulario" method="POST" onsubmit="return validar()" action="AñadirCliente.html">      
+            <form id="formulario" name="formulario" method="POST" onsubmit="return validar()" action="#">      
               <div class="row">
       
                 <div class="col-25">
@@ -133,7 +136,7 @@
                 </div>
       
                 <div class="col-25">
-                  <input type="text" id="nombre2" placeholder="Escriba sus nombres">
+                  <input type="text" id="nombre2" placeholder="Escriba sus nombres" autocomplete="off">
                 </div>
       
                 <div class="col-25">
@@ -141,7 +144,7 @@
                 </div>
       
                 <div class="col-25">
-                  <input type="text" id="apellido2" placeholder="Escriba sus apellidos">
+                  <input type="text" id="apellido2" placeholder="Escriba sus apellidos" autocomplete="off">
                 </div>
       
               </div>
@@ -153,7 +156,7 @@
                 </div>
       
                 <div class="col-25">
-                  <input type="text" id="correo2" placeholder="Escriba su correo electrónico">
+                  <input type="text" id="correo2" placeholder="Escriba su correo electrónico" autocomplete="off">
                 </div>
       
                 <div class="col-25">
@@ -191,23 +194,34 @@
               </div>
   
               <div class="row">
+
+                <div class="col-25">
+                  <label id="usuario">Usuario:</label>
+                </div>
+      
+                <div class="col-25">
+                  <input type="text" id="usuario2" placeholder="Escriba su usuario" autocomplete="off">
+                </div>
       
                 <div class="col-25">
                   <label id="pass">Contraseña:</label>
                 </div>
       
                 <div class="col-25">
-                  <input type="password" id="pass2">
+                  <input type="password" id="pass2" placeholder="Escriba la contraseña">
+                </div>
+      
+              </div>
+
+              <div class="row">
+                <div class="col-25">
+                  <label id="pass3">Valide Contraseña:</label>
+                </div>
+      
+                <div class="col-25">
+                  <input type="password" id="pass4" placeholder="Escriba nuevamente la contraseña">
                 </div>
 
-                <div class="col-25">
-                    <label id="pass3">Valide Contraseña:</label>
-                  </div>
-        
-                  <div class="col-25">
-                    <input type="password" id="pass4">
-                  </div>
-      
               </div>
 
                 <input type="submit" value="Aceptar" style="border: none; width: 100px;">
