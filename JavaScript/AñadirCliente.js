@@ -146,9 +146,7 @@ function validar(){
         return false;
     }
 
-    Swal.fire({
-        icon: 'success',
-        title:'Registro exitoso',
-    });
+    alert("Registro exitoso");
 
 };
+
