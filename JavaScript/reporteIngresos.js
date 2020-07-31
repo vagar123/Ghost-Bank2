@@ -69,11 +69,9 @@ function validar(){
         return false;
     }
 
-    Swal.fire({
-        icon: 'success',
-        title:'Registro exitoso',
-    });
-
+    else{
+        alert("Reporte generado con éxito");
+    }
 };
 
 function validar2(){
@@ -122,10 +120,9 @@ function validar2(){
         return false;
     }
 
-    Swal.fire({
-        icon: 'success',
-        title:'Registro exitoso',
-    });
+    else{
+        alert("Ingreso exitoso");
+    }
 
 };
 
@@ -175,9 +172,29 @@ function validar3(){
         return false;
     }
 
-    Swal.fire({
-        icon: 'success',
-        title:'Registro exitoso',
-    });
+    else{
+        alert("Ingreso exitoso");
+    }
 
+};
+
+
+function validar4(){
+    Swal.fire({
+        title: '¿Esta seguro?',
+        text: "Esta acción no se podrá revertir!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Si, eliminarlo!'
+    })
+    .then((result) => {
+        if (result.value) {
+        Swal.fire(
+            'Eliminado!',
+            'El registro ha sido eliminado.',
+            'success'
+        )}
+    })
 };

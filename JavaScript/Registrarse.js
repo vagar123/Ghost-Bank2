@@ -45,21 +45,20 @@ function validar(){
     var tipo, identificacion, nombre, apellido, correo, telefono, genero, fechaN, usuario, pass1, pass2;
 
     tipo = document.getElementById("tipo2").value;
-    identificacion = document.getElementById("codigo2").value;
+    identificacion = document.getElementById("id2").value;
     nombre = document.getElementById("nombre2").value;
     apellido = document.getElementById("apellido2").value;
     correo = document.getElementById("correo2").value;
-    telefono = document.getElementById("telefono2").value;
-    genero = document.getElementById("rol2").value;
-    fechaN = document.getElementById("contrato2").value;
-    usuario = document.getElementById("usuario2").value;
-    pass1 = document.getElementById("pass2").value;
-    pass2 = document.getElementById("pass4").value;
+    telefono = document.getElementById("tele2").value;
+    genero = document.getElementById("genero2").value;
+    fechaN = document.getElementById("fecha").value;
+    pass1 = document.getElementById("pass1").value;
+    pass2 = document.getElementById("pass2").value;
 
     expresion = /\w+@\w+\.+[a-z]/;
 
     if(tipo == 0 || identificacion == "" || nombre == "" || apellido == "" || correo == "" || 
-    telefono == "" || genero == 0 || fechaN == "" || usuario == "" || pass1 == "" || pass2 == ""){
+    telefono == "" || genero == 0 || fechaN == "" || pass1 == "" || pass2 == ""){
         Swal.fire({
 			icon: 'error',
 			title:'Registro fallido',
@@ -139,15 +138,6 @@ function validar(){
         return false;
     }
 
-    else if(usuario.length>20){
-        Swal.fire({
-			icon: 'warning',
-            title:'Usuario inválido',
-            text: 'El usuario escrito es muy largo',
-		});
-        return false;
-    }
-
     else if(pass2 != pass1){
         Swal.fire({
 			icon: 'warning',
@@ -161,4 +151,3 @@ function validar(){
     }
 
 };
-

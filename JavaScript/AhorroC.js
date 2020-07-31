@@ -10,8 +10,8 @@ function validar(){
     if(mes == 0 && semana == 0 && dia == 0 && fecha == ""){
         Swal.fire({
 			icon: 'error',
-			title:'Calculo fallido',
-			text: 'Debe diligenciar mínimo una opción de las fechas para generar el calculo',
+			title:'Reporte fallido',
+			text: 'Debe seleccionar mínimo un mes, semana, día o fecha.',
 		});
         return false;
     }
@@ -19,15 +19,14 @@ function validar(){
     else if(grafica == "0"){
         Swal.fire({
 			icon: 'error',
-			title:'Calculo fallido',
-			text: 'Debe seleccionar un tipo de grafica',
+			title:'Reporte fallido',
+			text: 'Debe seleccionar el tipo de gráfica que desea',
 		});
         return false;
     }
 
-    Swal.fire({
-        icon: 'success',
-        title:'Calculo exitoso',
-    });
+    else{
+        alert("Reporte generado con éxito");
+    }
 
 };

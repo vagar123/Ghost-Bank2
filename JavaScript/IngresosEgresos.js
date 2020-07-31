@@ -25,9 +25,8 @@ function validar(){
         return false;
     }
 
-    Swal.fire({
-        icon: 'success',
-        title:'Reporte exitoso',
-    });
+    else{
+        alert("Reporte generado con éxito");
+    }
 
 };

@@ -46,7 +46,7 @@ header #logo2{
 #panel{
     background: #fff;
     width: 18%;
-    height: 1800px;
+    height: 1300px;
     border-right: 1px solid #ccc;
     margin-top:0px;
     float: left;
@@ -289,14 +289,14 @@ header #logo2{
     border-radius: 4px;
 }
 
-form{
+#container{
     width:90%;
     margin-left: 50px;
     margin-right: auto;
 }
 
 input, select{
-    width: 95%;
+    width: 100%;
     padding: 5px;
     border: none;
     border: 1px solid rgb(156, 156, 156);

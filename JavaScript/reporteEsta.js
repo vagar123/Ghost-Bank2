@@ -42,14 +42,15 @@ function solonumeros(e){
 };
 
 function validar(){
-    var id, des, grafica, autor;
+    var id, tipo, des, grafica, autor;
 
     id = document.getElementById("id2").value;
+    tipo = document.getElementById("tipo2").value;
     des = document.getElementById("des2").value;
     grafica = document.getElementById("grafica2").value;
     autor = document.getElementById("autor2")
 
-    if(id == "" || des == "" || grafica == 0 || autor == ""){
+    if(id == "" || tipo == 0 || des == "" || grafica == 0 || autor == ""){
         Swal.fire({
 			icon: 'error',
 			title:'Reporte fallido',
@@ -76,9 +77,8 @@ function validar(){
         return false;
     }
 
-    Swal.fire({
-        icon: 'success',
-        title:'Registro exitoso',
-    });
+    else{
+        alert("Reporte generado con éxito");
+    }
 
 };
